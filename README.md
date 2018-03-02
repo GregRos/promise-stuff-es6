@@ -1,9 +1,13 @@
 # Promise-stuff-es6
 Integrates the [`promise-stuff`](https://github.com/GregRos/promise-stuff) package with the native ES6 Promise. This requires very little code, and this package is mainly provided for convenience.
 
-Contains both typings and code. To use properly, you must import this module at any point in your code:
+Installing this package is not enough, you also have to import it in your code. Without importing it, you'll see the type definitions, but the promise won't be extended during runtime.
 
     import "promise-stuff-es6";
+
+Require will also work for most environments:
+
+    require("promise-stuff-es6");
 
 This will extend the `Promise` prototype with the utility methods from `promise-stuff`.
 
