@@ -1,0 +1,49 @@
+{
+  "name": "promise-stuff-es6",
+  "version": "0.1.0",
+  "description": "Integrating the promise-stuff package into ES6 native promises.",
+  "keywords": [
+    "promise",
+    "promise-a",
+    "timeout",
+    "finally",
+    "typescript",
+    "extension",
+    "utility",
+    "async",
+    "es6"
+  ],
+  "directories": {
+    "test": "dist/__test__",
+    "lib": "dist/lib",
+    "example": "src/examples"
+  },
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "repository": "https://github.com/GregRos/promise-stuff",
+  "homepage": "https://github.com/GregRos/promise-stuff",
+  "main": "dist/lib/index.js",
+  "dependencies": {
+    "promise-stuff": "^0.3.1",
+    "typescript": "^2.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "ava",
+    "typedoc": "typedoc --target es6 --out ./docs --name \"promise-stuff\"  src/lib --excludeExternals --excludePrivate"
+  },
+  "author": "GregRos",
+  "license": "MIT",
+  "ava": {
+    "files": [
+      "dist/__test__/**/*.spec.js",
+      "!dist/__test/helpers/*.*"
+    ],
+    "source": [
+      "src/**/*.ts"
+    ]
+  },
+  "typings": "dist/lib/index.d.ts"
+}
