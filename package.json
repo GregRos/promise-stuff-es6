@@ -31,19 +31,8 @@
   "devDependencies": {
     "typescript": "^2.7.2"
   },
-  "scripts": {
-    "test": "ava"
-  },
   "author": "GregRos",
   "license": "MIT",
-  "ava": {
-    "files": [
-      "dist/__test__/**/*.spec.js",
-      "!dist/__test/helpers/*.*"
-    ],
-    "source": [
-      "src/**/*.ts"
-    ]
-  },
+
   "typings": "dist/lib/index.d.ts"
 }
