@@ -1,6 +1,6 @@
 {
   "name": "promise-stuff-es6",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Integrating the promise-stuff package into ES6 native promises.",
   "keywords": [
     "promise",
@@ -22,17 +22,17 @@
     "dist/",
     "src/"
   ],
-  "repository": "https://github.com/GregRos/promise-stuff",
-  "homepage": "https://github.com/GregRos/promise-stuff",
+  "repository": "https://github.com/GregRos/promise-stuff-es6",
+  "homepage": "https://github.com/GregRos/promise-stuff-es6",
   "main": "dist/lib/index.js",
-  "dependencies": {
-    "promise-stuff": "^0.3.1",
+  "peerDependencies": {
+    "promise-stuff": "^0.3.1"
+  },
+  "devDependencies": {
     "typescript": "^2.7.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "ava",
-    "typedoc": "typedoc --target es6 --out ./docs --name \"promise-stuff\"  src/lib --excludeExternals --excludePrivate"
   },
   "author": "GregRos",
   "license": "MIT",
