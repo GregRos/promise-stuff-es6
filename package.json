@@ -1,6 +1,6 @@
 {
   "name": "promise-stuff-es6",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Integrating the promise-stuff package into ES6 native promises.",
   "keywords": [
     "promise",
